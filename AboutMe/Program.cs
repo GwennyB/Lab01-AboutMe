@@ -70,7 +70,7 @@ namespace AboutMe
         static int QRetire()
         {
             int response = 2019; // year (incorrect 2019 is default)
-            Console.WriteLine("In what year do I intend to retire?");
+            Console.WriteLine("In what year do I intend to retire? (Please enter a numeric year.");
             string rawResponse = Console.ReadLine();
             try
             {
@@ -78,7 +78,7 @@ namespace AboutMe
             }
             catch
             {
-                Console.WriteLine("That's not a number. Sorry!");
+                Console.WriteLine("That's not a numeric year. Sorry!");
             }
             return response;
         }
