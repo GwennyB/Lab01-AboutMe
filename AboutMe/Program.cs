@@ -45,8 +45,16 @@ namespace AboutMe
         static int QYearsAtBoeing()
         {
             int response = 0; // number of years (incorrect 0 is default)
-            Console.WriteLine("How many (whole) years did I work at Boeing? (Please enter a number. You have 3 guesses.");
+            Console.WriteLine("How many (whole) years did I work at Boeing? (Please enter a number.");
             string rawResponse = Console.ReadLine();
+            try
+            {
+                response = Convert.ToUInt16(rawResponse);
+            }
+            catch
+            {
+                Console.WriteLine("That's not a number. Sorry!");
+            }
             return response;
         }
 
