@@ -24,7 +24,6 @@ namespace AboutMe
             }
             // Q1 feedback
             Console.WriteLine("I earned a BS in Mechanical Engineering from The University of Texas at Austin.");
-            Console.WriteLine($"correct: {results[0]}    incorrect: {results[1]}");
             Console.ReadLine();
 
             if (QAerospace() == false)
@@ -37,7 +36,6 @@ namespace AboutMe
             }
             // Q2 feedback
             Console.WriteLine("I've had a pretty full career. In addition to aerospace, I've worked as a designer/engineer in industrial food processing equipment, silicon wafer processing products, military specialty tools research and development, and heavy equipment.");
-            Console.WriteLine($"correct: {results[0]}    incorrect: {results[1]}");
             Console.ReadLine();
 
             if (QYearsAtBoeing() == 11)
@@ -50,7 +48,6 @@ namespace AboutMe
             }
             // Q3 feedback
             Console.WriteLine("I worked at Boeing for just over 11 years in total. Although I grew beyond Boeing, I wouldn't trade that experience for the world.");
-            Console.WriteLine($"correct: {results[0]}    incorrect: {results[1]}");
             Console.ReadLine();
 
             if (QCFGrad().ToLower() == "march")
@@ -63,7 +60,6 @@ namespace AboutMe
             }
             // Q4 feedback
             Console.WriteLine("I will present with my final project group on March 15, and I'll be a proud Code Fellows .NET graduate a few days after!");
-            Console.WriteLine($"correct: {results[0]}    incorrect: {results[1]}");
             Console.ReadLine();
 
             if (QRetire() == 2026)
@@ -76,7 +72,6 @@ namespace AboutMe
             }
             // Q5 feedback
             Console.WriteLine("I fully intend to retire early in 7 years, just after my birthday in 2026.");
-            Console.WriteLine($"correct: {results[0]}    incorrect: {results[1]}");
             Console.ReadLine();
 
             // returns array with [correct, incorrect]
@@ -119,7 +114,7 @@ namespace AboutMe
             }
             catch
             {
-                Console.WriteLine("That's not a number. Sorry!");
+                Console.WriteLine("ERROR: That's not a number. Sorry!\n");
             }
             return response;
         }
@@ -144,7 +139,7 @@ namespace AboutMe
             }
             catch
             {
-                Console.WriteLine("That's not a numeric year. Sorry!");
+                Console.WriteLine("ERROR: That's not a numeric year. Sorry!\n");
             }
             return response;
         }
