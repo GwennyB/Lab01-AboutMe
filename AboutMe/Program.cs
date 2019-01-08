@@ -19,9 +19,14 @@ namespace AboutMe
 
         static bool QDegree()
         {
-            bool response; // yes=true, no=false
+            bool response = false; // yes=true, no=false (incorrect is default)
             Console.WriteLine("Have I earned a bachelor's degree? (Please enter 'yes' or 'no'");
-            string response = Console.ReadLine();
+            string rawResponse = Console.ReadLine();
+            if(rawResponse.ToLower() == "yes" || rawResponse.ToLower() == "y")
+            {
+                response = true;
+            }
+
             return response;
         }
 
@@ -29,7 +34,7 @@ namespace AboutMe
         {
             bool response; // yes=true, no=false
             Console.WriteLine("As an engineer, have I worked only in aerospace? (Please enter 'yes' or 'no'");
-            string response = Console.ReadLine();
+            string rawResponse = Console.ReadLine();
             return response;
         }
 
@@ -37,7 +42,7 @@ namespace AboutMe
         {
             int response; // number of years
             Console.WriteLine("How many (whole) years did I work at Boeing? (Please enter a number. You have 3 guesses.");
-            string response = Console.ReadLine();
+            string rawResponse = Console.ReadLine();
             return response;
         }
 
@@ -45,7 +50,7 @@ namespace AboutMe
         {
             string response; // name of month
             Console.WriteLine("During which month in 2019 will I graduate from Code Fellows?");
-            string response = Console.ReadLine();
+            string rawResponse = Console.ReadLine();
             return response;
         }
 
@@ -53,7 +58,7 @@ namespace AboutMe
         {
             int response; // year
             Console.WriteLine("In what year do I intend to retire?");
-            string response = Console.ReadLine();
+            string rawResponse = Console.ReadLine();
             return response;
         }
 
