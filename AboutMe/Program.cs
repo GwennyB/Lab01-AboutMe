@@ -20,6 +20,9 @@ namespace AboutMe
             {
                 results[1]++;
             }
+            // Q1 feedback
+            Console.WriteLine("I earned a BS in Mechanical Engineering from The University of Texas at Austin.");
+            Console.ReadLine();
 
             if (QAerospace() == false)
             {
