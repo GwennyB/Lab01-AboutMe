@@ -6,13 +6,57 @@ namespace AboutMe
     {
         static void Main(string[] args)
         {
-            int[] results = { 0, 5 };
+            int[] results = { 0, 0 };
             results = QuizMgr(results);
         }
 
         static int[] QuizMgr(int[] results)
         {
-            
+            if (QDegree() == true)
+            {
+                results[0]++;
+            }
+            else
+            {
+                results[1]++;
+            }
+
+            if (QAerospace() == false)
+            {
+                results[0]++;
+            }
+            else
+            {
+                results[1]++;
+            }
+
+            if (QYearsAtBoeing() == 11)
+            {
+                results[0]++;
+            }
+            else
+            {
+                results[1]++;
+            }
+
+            if (QCFGrad().ToLower() == "march")
+            {
+                results[0]++;
+            }
+            else
+            {
+                results[1]++;
+            }
+
+            if (QRetire() == 2026)
+            {
+                results[0]++;
+            }
+            else
+            {
+                results[1]++;
+            }
+
             // returns array with [correct, incorrect]
             return results;
         }
