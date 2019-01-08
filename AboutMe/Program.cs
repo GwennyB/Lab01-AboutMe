@@ -72,6 +72,14 @@ namespace AboutMe
             int response = 2019; // year (incorrect 2019 is default)
             Console.WriteLine("In what year do I intend to retire?");
             string rawResponse = Console.ReadLine();
+            try
+            {
+                response = Convert.ToUInt16(rawResponse);
+            }
+            catch
+            {
+                Console.WriteLine("That's not a number. Sorry!");
+            }
             return response;
         }
 
