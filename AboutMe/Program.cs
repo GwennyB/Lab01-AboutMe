@@ -79,7 +79,7 @@ namespace AboutMe
         static bool QDegree()
         {
             bool response = false; // yes=true, no=false (incorrect false is default)
-            Console.WriteLine("Have I earned a bachelor's degree? (Please enter 'yes' or 'no'");
+            Console.WriteLine("Have I earned a bachelor's degree? (Please enter 'yes' or 'no'.)");
             string rawResponse = Console.ReadLine();
             if(rawResponse.ToLower() == "yes" || rawResponse.ToLower() == "y")
             {
@@ -92,7 +92,7 @@ namespace AboutMe
         static bool QAerospace()
         {
             bool response = true; // yes=true, no=false (incorrect true is default)
-            Console.WriteLine("As an engineer, have I worked only in aerospace? (Please enter 'yes' or 'no'");
+            Console.WriteLine("As an engineer, have I worked only in aerospace? (Please enter 'yes' or 'no'.)");
             string rawResponse = Console.ReadLine();
             if (rawResponse.ToLower() == "no" || rawResponse.ToLower() == "n")
             {
@@ -104,7 +104,7 @@ namespace AboutMe
         static int QYearsAtBoeing()
         {
             int response = 0; // number of years (incorrect 0 is default)
-            Console.WriteLine("How many (whole) years did I work at Boeing? (Please enter a number.");
+            Console.WriteLine("How many (whole) years did I work at Boeing? (Please enter a number.)");
             string rawResponse = Console.ReadLine();
             try
             {
