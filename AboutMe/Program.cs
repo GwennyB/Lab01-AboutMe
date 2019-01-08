@@ -63,6 +63,7 @@ namespace AboutMe
             string response = ""; // name of month (incorrect "" is default)
             Console.WriteLine("During which month in 2019 will I graduate from Code Fellows?");
             string rawResponse = Console.ReadLine();
+            response = rawResponse;
             return response;
         }
 
