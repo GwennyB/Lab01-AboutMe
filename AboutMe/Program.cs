@@ -135,6 +135,10 @@ namespace AboutMe
             {
                 Console.WriteLine("ERROR: That's not a number. Sorry!\n");
             }
+            finally
+            {
+                Console.WriteLine("Fun side note: Boeing's factory in Everett, WA won a Guinness Book listing for largest in the world by volume at 472,000,000 cubic feet (13.3 million cubic meters). It's GIANT!");
+            }
             return response;
         }
 
